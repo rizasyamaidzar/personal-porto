@@ -66,29 +66,32 @@
                 <!-- header-wrap -->
                 <div class="header-wrap layout-full">
 
-                    <img src="images/home/cover.jpg" alt="profile-image">
+                    <img src="{{ asset('images/home/fix.png') }}" alt="profile-image">
 
                     <div class="home-heading">
                         <div class="home-logo">
 
-                            <p class="home-job-title">Web Developer</p>
+                            <p class="home-job-title">Fullstack Developer</p>
 
                             <p class="home-marquee">
-                                Building creative websites for the world's people. Always in search
-                                of the great user experience.
-                                Building creative websites for the world's people. Always in search
-                                of the great user experience.
+                                A Full Stack Web Developer & Backend Engineer with professional experience gained
+                                through full-time work, freelance projects,
+                                internships, and multiple completed development projects. Skilled in frontend–backend
+                                development, API design, and database
+                                management, with proven experience in leading application development projects. Highly
+                                proactive, quick to adapt to new technologies,
+                                and capable of analyzing and solving complex technical problems effectively.
                             </p>
 
                             <!--<i class="home-logo-left "><span>Web</span></i>-->
                             <i class="home-logo-center">
                                 <span class="home-icon">
-                                    <img src="images/home/icon.svg" alt="icon" />
+                                    <img src="{{ asset('images/home/icon.svg') }}" alt="icon" />
                                 </span>
                                 <span class="home-text-container">
-                                    <p class="home-text-container-placeholder">Jason Whallberg</p>
+                                    <p class="home-text-container-placeholder">Riza Afif Syamaidzar</p>
                                 </span>
-                                <span class="home-text">Jason Whallberg</span>
+                                <span class="home-text">Riza Afif Syamaidzar</span>
                             </i>
                             <!--<i class="home-logo-right"><span>Developer</span></i>-->
                         </div>
@@ -98,7 +101,7 @@
 
                     <!-- HOME BG LOGO -->
                     <div class="home-bg-logo">
-                        <img src="images/home/icon-bg2.svg" alt="icon" />
+                        <img src="{{ asset('images/home/icon-bg2.svg') }}" alt="icon" />
                     </div>
                     <!-- HOME BG LOGO -->
 
@@ -106,10 +109,10 @@
                     <!-- header-social -->
                     <div class="header-bottom">
 
-                        <a class="social-link facebook" href="#"></a>
-                        <a class="social-link twitter" href="#"></a>
-                        <a class="social-link linkedin" href="#"></a>
-                        <a class="social-link instagram" href="#"></a>
+                        {{-- <a class="social-link facebook" href="#"></a>
+                        <a class="social-link twitter" href="#"></a> --}}
+                        <a class="social-link linkedin" href="https://www.linkedin.com/in/rizaafifsyamaidzar/"></a>
+                        <a class="social-link instagram" href="https://www.instagram.com/rizaafifs_/"></a>
 
                     </div>
                     <!-- header-social -->
@@ -215,41 +218,41 @@
                                                 </div>
 
                                                 <div class="event">
-                                                    <h3>Dec 2013 - Current</h3>
-                                                    <h4>Front End Web Developer</h4>
-                                                    <h5>Pixelwars Inc.</h5>
-                                                    <p>I currently work for Pixelwars creative studio. I create usable
-                                                        web interfaces, front end coding stuff and almost anything. But
-                                                        i love what i do.</p>
-                                                </div>
-
-
-                                                <div class="event">
-                                                    <h3>Jun 2012 - Dec 2013</h3>
-                                                    <h4>Web Developer</h4>
-                                                    <h5>Google Inc.</h5>
-                                                    <p>I worked as a Web Developer at Google for 3 years. I create
-                                                        usable web interfaces, front end coding stuff and almost
-                                                        anything. But i love what i do.</p>
+                                                    <h3>July 2024 - Current</h3>
+                                                    <h4>Fullstack Developer & System Analyst</h4>
+                                                    <h5>Javatekno MitraSolusi - Ponorogo</h5>
+                                                    <p> Responsible for analyzing system requirements and developing
+                                                        web-based
+                                                        applications. Involved in frontend and backend development, API
+                                                        integration,
+                                                        database design, and system optimization to support business and
+                                                        operational
+                                                        processes..</p>
                                                 </div>
 
                                                 <div class="event">
-                                                    <h3>2006 - 2012</h3>
-                                                    <h4>Exclusive Author</h4>
-                                                    <h5>Envato Inc.</h5>
-                                                    <p>I am an Elite Author at Envato. I create usable web interfaces,
-                                                        front end coding stuff and almost anything. But i love what i
-                                                        do.</p>
+                                                    <h3>Aug 2024 - Dec 2024</h3>
+                                                    <h4>Backend Developer Intern</h4>
+                                                    <h5>Technopartner Indonesia. - Yogyakarta</h5>
+                                                    <p> Developed Content Management Systems (CMS) for two projects
+                                                        using the
+                                                        Laravel framework. Collaborated closely with the team through
+                                                        the Agile
+                                                        Scrum methodology to ensure structured development and alignment
+                                                        with
+                                                        project requirements.</p>
+                                                </div>
+                                                <div class="event">
+                                                    <h3>Sep 2023 – Dec 2023</h3>
+                                                    <h4>Surveyor & Backend Engineer</h4>
+                                                    <h5>ADS Digital Partner – Malang</h5>
+                                                    <p>
+                                                        Assisted the backend team in developing features using the
+                                                        Laravel
+                                                        framework and performed API testing using Postman.
+                                                    </p>
                                                 </div>
 
-                                                <div class="event">
-                                                    <h3>2005 - 2006</h3>
-                                                    <h4>Design Intern</h4>
-                                                    <h5>Dropbox Inc.</h5>
-                                                    <p>I am an Elite Author at Envato. I create usable web interfaces,
-                                                        front end coding stuff and almost anything. But i love what i
-                                                        do.</p>
-                                                </div>
 
                                                 <div class="event">
                                                     <h2>EDUCATION</h2>
@@ -260,15 +263,18 @@
                                                 </div>
 
                                                 <div class="event">
-                                                    <h3>2002</h3>
-                                                    <h4>Atom Science</h4>
-                                                    <h5>Stanford University</h5>
-                                                    <p>I studied atomic stuff at Stanford University. I create usable
-                                                        web interfaces, front end coding stuff and almost anything. But
-                                                        i love what i do.</p>
+                                                    <h3>2021-2025</h3>
+                                                    <h4>Bussines Information System</h4>
+                                                    <h5>Politeknik Negeri Malang</h5>
+                                                    <p> Focused on business process analysis, information systems
+                                                        development,
+                                                        database management, and data-driven decision making.
+                                                        Experienced in
+                                                        building web-based systems to support operational and managerial
+                                                        needs.</p>
                                                 </div>
 
-
+                                                {{--
                                                 <div class="event">
                                                     <h3>2010</h3>
                                                     <h4>Software Engineering</h4>
@@ -285,7 +291,7 @@
                                                     <p>I studied Computer Science at MIT. I create usable web
                                                         interfaces, front end coding stuff and almost anything. But i
                                                         love what i do.</p>
-                                                </div>
+                                                </div> --}}
 
 
 

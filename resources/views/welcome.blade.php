@@ -94,7 +94,7 @@
                 <i class="home-logo-left "><span>Fullstack</span></i>
                 <i class="home-logo-center">
                     <span class="home-icon">
-                        <!-- <img src="images/home/icon.svg" alt="icon" /> -->
+                        <img src="images/home/icon.svg" alt="icon" />
                     </span>
                     <span class="home-text-container">
                         <span class="home-text-container-placeholder">Riza Afif Syamaidzar</span>

@@ -71,13 +71,16 @@
                     <div class="home-heading">
                         <div class="home-logo">
 
-                            <p class="home-job-title">Web Developer</p>
+                            <p class="home-job-title">Fullstack Developer</p>
 
                             <p class="home-marquee">
-                                Building creative websites for the world's people. Always in search
-                                of the great user experience.
-                                Building creative websites for the world's people. Always in search
-                                of the great user experience.
+                                A Full Stack Web Developer & Backend Engineer with professional experience gained
+                                through full-time work, freelance projects,
+                                internships, and multiple completed development projects. Skilled in frontend–backend
+                                development, API design, and database
+                                management, with proven experience in leading application development projects. Highly
+                                proactive, quick to adapt to new technologies,
+                                and capable of analyzing and solving complex technical problems effectively.
                             </p>
 
                             <!--<i class="home-logo-left "><span>Web</span></i>-->
@@ -86,9 +89,9 @@
                                     <img src="{{ asset('images/home/icon.svg') }}" alt="icon" />
                                 </span>
                                 <span class="home-text-container">
-                                    <p class="home-text-container-placeholder">Jason Whallberg</p>
+                                    <p class="home-text-container-placeholder">Riza Afif Syamaidzar</p>
                                 </span>
-                                <span class="home-text">Jason Whallberg</span>
+                                <span class="home-text">Riza Afif Syamaidzar</span>
                             </i>
                             <!--<i class="home-logo-right"><span>Developer</span></i>-->
                         </div>
@@ -106,10 +109,10 @@
                     <!-- header-social -->
                     <div class="header-bottom">
 
-                        <a class="social-link facebook" href="#"></a>
-                        <a class="social-link twitter" href="#"></a>
-                        <a class="social-link linkedin" href="#"></a>
-                        <a class="social-link instagram" href="#"></a>
+                        {{-- <a class="social-link facebook" href="#"></a>
+                        <a class="social-link twitter" href="#"></a> --}}
+                        <a class="social-link linkedin" href="https://www.linkedin.com/in/rizaafifsyamaidzar/"></a>
+                        <a class="social-link instagram" href="https://www.instagram.com/rizaafifs_/"></a>
 
                     </div>
                     <!-- header-social -->
@@ -204,13 +207,16 @@
 
                                                 <div class="col-sm-9">
 
-                                                    <h2 class="fw-300">Hello, I am Jason Whallberg, a <strong>graphic
-                                                            designer</strong> based in LA.
-                                                        I can design beautiful <strong>type faces</strong> and
-                                                        <strong>user
-                                                            interfaces</strong> for both digital and print
-                                                        media and I love coffee.
+                                                    <h2 class="fw-300">
+                                                        Hello, I am Riza Afif Syamaidzar, a <strong>Full Stack Web
+                                                            Developer</strong> and
+                                                        <strong>Backend Engineer</strong>. I build scalable web
+                                                        applications,
+                                                        design efficient <strong>APIs</strong>, and manage
+                                                        <strong>databases</strong>.
+                                                        I enjoy solving complex problems
                                                     </h2>
+
 
                                                 </div>
 
