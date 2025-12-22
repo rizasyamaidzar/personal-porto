@@ -59,36 +59,38 @@
 
 
 
-
             <!-- HEADER -->
             <header id="masthead" class="header" role="banner">
 
                 <!-- header-wrap -->
                 <div class="header-wrap layout-full">
 
-                    <img src="images/home/cover.jpg" alt="profile-image">
+                    <img src="{{ asset('images/home/fix.png') }}" alt="profile-image">
 
                     <div class="home-heading">
                         <div class="home-logo">
 
-                            <p class="home-job-title">Web Developer</p>
+                            <p class="home-job-title">Fullstack Developer</p>
 
                             <p class="home-marquee">
-                                Building creative websites for the world's people. Always in search
-                                of the great user experience.
-                                Building creative websites for the world's people. Always in search
-                                of the great user experience.
+                                A Full Stack Web Developer & Backend Engineer with professional experience gained
+                                through full-time work, freelance projects,
+                                internships, and multiple completed development projects. Skilled in frontend–backend
+                                development, API design, and database
+                                management, with proven experience in leading application development projects. Highly
+                                proactive, quick to adapt to new technologies,
+                                and capable of analyzing and solving complex technical problems effectively.
                             </p>
 
                             <!--<i class="home-logo-left "><span>Web</span></i>-->
                             <i class="home-logo-center">
                                 <span class="home-icon">
-                                    <img src="images/home/icon.svg" alt="icon" />
+                                    <img src="{{ asset('images/home/icon.svg') }}" alt="icon" />
                                 </span>
                                 <span class="home-text-container">
-                                    <p class="home-text-container-placeholder">Jason Whallberg</p>
+                                    <p class="home-text-container-placeholder">Riza Afif Syamaidzar</p>
                                 </span>
-                                <span class="home-text">Jason Whallberg</span>
+                                <span class="home-text">Riza Afif Syamaidzar</span>
                             </i>
                             <!--<i class="home-logo-right"><span>Developer</span></i>-->
                         </div>
@@ -98,19 +100,25 @@
 
                     <!-- HOME BG LOGO -->
                     <div class="home-bg-logo">
-                        <img src="images/home/icon-bg2.svg" alt="icon" />
+                        <img src="{{ asset('images/home/icon-bg2.svg') }}" alt="icon" />
                     </div>
                     <!-- HOME BG LOGO -->
 
 
                     <!-- header-social -->
                     <div class="header-bottom">
+                        <a href="https://gitlab.com/rizasyamaidzar" target="_blank" rel="noopener">
+                            <i class="fab fa-gitlab" style="color: #c3c8d1;"></i>
+                        </a>
 
-                        <a class="social-link facebook" href="#"></a>
-                        <a class="social-link twitter" href="#"></a>
-                        <a class="social-link linkedin" href="#"></a>
-                        <a class="social-link instagram" href="#"></a>
+                        <a class="social-link github" href="https://github.com/rizasyamaidzar" target="_blank"
+                            rel="noopener"></a>
 
+                        <a class="social-link linkedin" href="https://www.linkedin.com/in/rizaafifsyamaidzar"
+                            target="_blank" rel="noopener"></a>
+
+                        <a class="social-link instagram" href="https://instagram.com/rizaafifs_" target="_blank"
+                            rel="noopener"></a>
                     </div>
                     <!-- header-social -->
 
@@ -119,7 +127,6 @@
                         <div class="nav-menu menu-with-icons">
                             <ul>
                                 <li><a class="home" href="{{ route('home') }}">Home</a></li>
-                                <li><a class="return" href="{{ route('portofolio') }}">Back To Portfolio</a></li>
                                 {{-- <li><a class="search-toggle">Search</a></li> --}}
 
                             </ul>
@@ -134,8 +141,8 @@
                         <form role="search" method="get" class="search-form" action="#">
                             <label>
                                 <span class="screen-reader-text">Search for:</span>
-                                <input type="search" class="search-field" placeholder="Enter Keyword" value=""
-                                    name="s">
+                                <input type="search" class="search-field" placeholder="Enter Keyword"
+                                    value="" name="s">
                             </label>
                             <input type="submit" class="search-submit" value="Search">
                         </form>
