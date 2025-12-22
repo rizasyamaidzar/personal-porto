@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{ asset('css/fonts/jost/jost.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}">
@@ -112,10 +114,20 @@
 
         <!-- .home-social -->
         <p class="home-social">
-            <a class="social-link facebook" href="#"></a>
+            {{-- <a class="social-link facebook" href="#"></a>
             <a class="social-link linkedin" href="#"></a>
             <a class="social-link behance" href="#"></a>
-            <a class="social-link dribbble" href="#"></a>
+            <a class="social-link dribbble" href="#"></a> --}}
+            <a class="social-link" href="https://gitlab.com/rizasyamaidzar" target="_blank" rel="noopener">
+                <i class="fab fa-gitlab" style="color: #c3c8d1;"></i>
+            </a>
+
+            <a class="social-link github" href="https://github.com/rizasyamaidzar" target="_blank" rel="noopener"></a>
+
+            <a class="social-link linkedin" href="https://www.linkedin.com/in/rizaafifsyamaidzar" target="_blank"
+                rel="noopener"></a>
+
+            <a class="social-link instagram" href="https://instagram.com/rizaafifs_" target="_blank" rel="noopener"></a>
         </p>
         <!-- .home-social -->
 

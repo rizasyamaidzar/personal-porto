@@ -15,6 +15,8 @@
     <!-- FAV and TOUCH ICONS -->
     <link rel="shortcut icon" href="{{ asset('images/ico/favicon.ico') }}">
     <link rel="apple-touch-icon" href="{{ asset('images/ico/apple-touch-icon.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <!-- FONTS -->
     <link rel="stylesheet" href="{{ asset('css/fonts/jost/jost.css') }}">
@@ -108,12 +110,18 @@
 
                     <!-- header-social -->
                     <div class="header-bottom">
+                        <a href="https://gitlab.com/rizasyamaidzar" target="_blank" rel="noopener">
+                            <i class="fab fa-gitlab" style="color: #c3c8d1;"></i>
+                        </a>
 
-                        {{-- <a class="social-link facebook" href="#"></a>
-                        <a class="social-link twitter" href="#"></a> --}}
-                        <a class="social-link linkedin" href="https://www.linkedin.com/in/rizaafifsyamaidzar/"></a>
-                        <a class="social-link instagram" href="https://www.instagram.com/rizaafifs_/"></a>
+                        <a class="social-link github" href="https://github.com/rizasyamaidzar" target="_blank"
+                            rel="noopener"></a>
 
+                        <a class="social-link linkedin" href="https://www.linkedin.com/in/rizaafifsyamaidzar"
+                            target="_blank" rel="noopener"></a>
+
+                        <a class="social-link instagram" href="https://instagram.com/rizaafifs_" target="_blank"
+                            rel="noopener"></a>
                     </div>
                     <!-- header-social -->
 
@@ -136,8 +144,8 @@
                         <form role="search" method="get" class="search-form" action="#">
                             <label>
                                 <span class="screen-reader-text">Search for:</span>
-                                <input type="search" class="search-field" placeholder="Enter Keyword" value=""
-                                    name="s">
+                                <input type="search" class="search-field" placeholder="Enter Keyword"
+                                    value="" name="s">
                             </label>
                             <input type="submit" class="search-submit" value="Search">
                         </form>
@@ -227,6 +235,7 @@
                                         <!-- SERVICES -->
 
                                         <!-- section-title -->
+                                        <!-- section-title -->
                                         <div class="section-title center">
                                             <h2>
                                                 <i>services</i>
@@ -237,401 +246,20 @@
                                         <!-- row -->
                                         <div class="row">
 
-                                            <!-- col -->
-                                            <div class="col-sm-6 col-lg-3">
-
-                                                <!-- service -->
-                                                <div class="service">
-                                                    <img src="{{ asset('images/site/service-01.svg') }}"
-                                                        alt="image" />
-                                                    <h3>Copywriter</h3>
-                                                    <p>I design super cool websites. It is a long established fact that
-                                                        a reader will be distracted by the readable content.</p>
+                                            @foreach ($services as $service)
+                                                <div class="col-sm-6 col-lg-3">
+                                                    <div class="service">
+                                                        <img src="{{ asset($service['icon']) }}" alt="image" />
+                                                        <h3>{{ $service['title'] }}</h3>
+                                                        <p>{{ $service['description'] }}</p>
+                                                    </div>
                                                 </div>
-                                                <!-- service -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-sm-6 col-lg-3">
-
-                                                <!-- service -->
-                                                <div class="service">
-                                                    <img src="{{ asset('images/site/service-02.svg') }}"
-                                                        alt="image" />
-                                                    <h3>Game Dev</h3>
-                                                    <p>I can design beautiful type faces for both digital and print
-                                                        media. It is a long established fact that a reader will be
-                                                        distracted.</p>
-                                                </div>
-                                                <!-- service -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-sm-6 col-lg-3">
-
-                                                <!-- service -->
-                                                <div class="service">
-                                                    <img src="{{ asset('images/site/service-03.svg') }}"
-                                                        alt="image" />
-                                                    <h3>Management</h3>
-                                                    <p>I write about web design. It is a long established fact that a
-                                                        reader will be distracted by the readable content.</p>
-                                                </div>
-                                                <!-- service -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-sm-6 col-lg-3">
-
-                                                <!-- service -->
-                                                <div class="service">
-                                                    <img src="{{ asset('images/site/service-04.svg') }}"
-                                                        alt="image" />
-                                                    <h3>Problem Solver</h3>
-                                                    <p>I have strong project management skills. It is a long
-                                                        established fact that a reader will be distracted by the
-                                                        readable content.</p>
-                                                </div>
-                                                <!-- service -->
-
-                                            </div>
-                                            <!-- col -->
+                                            @endforeach
 
                                         </div>
                                         <!-- row -->
-                                        <!-- SERVICES -->
-
-
-
-
-
-                                        <!-- PROCESS -->
-
-                                        <!-- section-title -->
-                                        <div class="section-title center">
-                                            <h2>
-                                                <i>work procces</i>
-                                            </h2>
-                                        </div>
-                                        <!-- section-title -->
-
 
                                         <!-- row -->
-                                        <div class="row">
-
-                                            <!-- col -->
-                                            <div class="col-xs-4 col-sm-2">
-
-                                                <!-- process -->
-                                                <div class="process">
-                                                    <img src="{{ asset('images/site/process-01.svg') }}"
-                                                        alt="image" />
-                                                    <h4>Research</h4>
-                                                </div>
-                                                <!-- process -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-4 col-sm-2">
-
-                                                <!-- process -->
-                                                <div class="process">
-                                                    <img src="{{ asset('images/site/process-02.svg') }}"
-                                                        alt="image" />
-                                                    <h4>IDEA</h4>
-                                                </div>
-                                                <!-- process -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-4 col-sm-2">
-
-                                                <!-- process -->
-                                                <div class="process">
-                                                    <img src="{{ asset('images/site/process-03.svg') }}"
-                                                        alt="image" />
-                                                    <h4>DESIGN</h4>
-                                                </div>
-                                                <!-- process -->
-
-                                            </div>
-
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-4 col-sm-2">
-
-                                                <!-- process -->
-                                                <div class="process">
-                                                    <img src="{{ asset('images/site/process-04.svg') }}"
-                                                        alt="image" />
-                                                    <h4>DEVELOP</h4>
-                                                </div>
-                                                <!-- process -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-4 col-sm-2">
-
-                                                <!-- process -->
-                                                <div class="process">
-                                                    <img src="{{ asset('images/site/process-05.svg') }}"
-                                                        alt="image" />
-                                                    <h4>TEST</h4>
-                                                </div>
-                                                <!-- process -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-4 col-sm-2">
-
-                                                <!-- process -->
-                                                <div class="process">
-                                                    <img src="{{ asset('images/site/process-06.svg') }}"
-                                                        alt="image" />
-                                                    <h4>LAUNCH</h4>
-                                                </div>
-                                                <!-- process -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                        </div>
-                                        <!-- row -->
-                                        <!-- PROCESS -->
-
-
-
-
-
-                                        <!-- CLIENTS -->
-
-                                        <!-- section-title -->
-                                        <div class="section-title center">
-                                            <h2>
-                                                <i>Proud to work with</i>
-                                            </h2>
-                                        </div>
-                                        <!-- section-title -->
-
-                                        <!-- row -->
-                                        <div class="row">
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- client -->
-                                                <div class="client">
-                                                    <a href="#">
-                                                        <img src="{{ asset('images/site/client-01.png') }}"
-                                                            alt="client">
-                                                    </a>
-                                                </div>
-                                                <!-- client -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- client -->
-                                                <div class="client">
-                                                    <a href="#">
-                                                        <img src="{{ asset('images/site/client-02.png') }}"
-                                                            alt="client">
-                                                    </a>
-                                                </div>
-                                                <!-- client -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- client -->
-                                                <div class="client">
-                                                    <a href="#">
-                                                        <img src="{{ asset('images/site/client-03.png') }}"
-                                                            alt="client">
-                                                    </a>
-                                                </div>
-                                                <!-- client -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- client -->
-                                                <div class="client">
-                                                    <a href="#">
-                                                        <img src="{{ asset('images/site/client-04.png') }}"
-                                                            alt="client">
-                                                    </a>
-                                                </div>
-                                                <!-- client -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- client -->
-                                                <div class="client">
-                                                    <a href="#">
-                                                        <img src="{{ asset('images/site/client-05.png') }}"
-                                                            alt="client">
-                                                    </a>
-                                                </div>
-                                                <!-- client -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- client -->
-                                                <div class="client">
-                                                    <a href="#">
-                                                        <img src="{{ asset('images/site/client-06.png') }}"
-                                                            alt="client">
-                                                    </a>
-                                                </div>
-                                                <!-- client -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- client -->
-                                                <div class="client">
-                                                    <a href="#">
-                                                        <img src="{{ asset('images/site/client-07.png') }}"
-                                                            alt="client">
-                                                    </a>
-                                                </div>
-                                                <!-- client -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- client -->
-                                                <div class="client">
-                                                    <a href="#">
-                                                        <img src="{{ asset('images/site/client-01.png') }}"
-                                                            alt="client">
-                                                    </a>
-                                                </div>
-                                                <!-- client -->
-
-                                            </div>
-                                            <!-- col -->
-
-
-
-                                        </div>
-                                        <!-- row -->
-                                        <!-- CLIENTS -->
-
-
-
-                                        <!-- FUN FACT -->
-
-                                        <!-- section-title -->
-
-                                        <div class="section-title center">
-                                            <h2>
-                                                <i>fun fact</i>
-                                            </h2>
-                                        </div>
-                                        <!-- section-title -->
-
-                                        <!-- row -->
-                                        <div class="row">
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- fun-fact -->
-                                                <div class="fun-fact">
-                                                    <img src="{{ asset('images/site/fun-01.svg') }}" alt="fun fact">
-                                                    <h4>24 Projects Completed</h4>
-                                                </div>
-                                                <!-- fun-fact -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- fun-fact -->
-                                                <div class="fun-fact">
-                                                    <img src="{{ asset('images/site/fun-02.svg') }}" alt="fun fact">
-                                                    <h4>7 Books Published</h4>
-                                                </div>
-                                                <!-- fun-fact -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- fun-fact -->
-                                                <div class="fun-fact">
-                                                    <img src="{{ asset('images/site/fun-03.svg') }}" alt="fun fact">
-                                                    <h4>3500 Photos Taken</h4>
-                                                </div>
-                                                <!-- fun-fact -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                            <!-- col -->
-                                            <div class="col-xs-6 col-sm-3">
-
-                                                <!-- fun-fact -->
-                                                <div class="fun-fact">
-                                                    <img src="{{ asset('images/site/fun-04.svg') }}" alt="fun fact">
-                                                    <h4>12 Design Awards Won</h4>
-                                                </div>
-                                                <!-- fun-fact -->
-
-                                            </div>
-                                            <!-- col -->
-
-                                        </div>
-                                        <!-- row -->
-                                        <!-- FUN FACT -->
-
-
-
-
 
 
 
@@ -680,21 +308,6 @@
 
 
 
-
-
-            <!-- .site-footer -->
-            <footer id="colophon" class="site-footer" role="contentinfo">
-
-                <!-- .site-info -->
-                <div class="site-info">
-                    <div class="textwidget">
-                        <p><a href="http://pixelwars.org/">Copyright &copy; 2017 by Pixelwars</a></p>
-                    </div>
-                </div>
-                <!-- .site-info -->
-
-            </footer>
-            <!-- .site-footer -->
 
 
 

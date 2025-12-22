@@ -15,6 +15,8 @@
     <!-- FAV and TOUCH ICONS -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <!-- FONTS -->
     <link rel="stylesheet" href="{{ asset('css/fonts/jost/jost.css') }}">
@@ -108,12 +110,18 @@
 
                     <!-- header-social -->
                     <div class="header-bottom">
+                        <a href="https://gitlab.com/rizasyamaidzar" target="_blank" rel="noopener">
+                            <i class="fab fa-gitlab" style="color: #c3c8d1;"></i>
+                        </a>
 
-                        {{-- <a class="social-link facebook" href="#"></a>
-                        <a class="social-link twitter" href="#"></a> --}}
-                        <a class="social-link linkedin" href="https://www.linkedin.com/in/rizaafifsyamaidzar/"></a>
-                        <a class="social-link instagram" href="https://www.instagram.com/rizaafifs_/"></a>
+                        <a class="social-link github" href="https://github.com/rizasyamaidzar" target="_blank"
+                            rel="noopener"></a>
 
+                        <a class="social-link linkedin" href="https://www.linkedin.com/in/rizaafifsyamaidzar"
+                            target="_blank" rel="noopener"></a>
+
+                        <a class="social-link instagram" href="https://instagram.com/rizaafifs_" target="_blank"
+                            rel="noopener"></a>
                     </div>
                     <!-- header-social -->
 
@@ -136,8 +144,8 @@
                         <form role="search" method="get" class="search-form" action="#">
                             <label>
                                 <span class="screen-reader-text">Search for:</span>
-                                <input type="search" class="search-field" placeholder="Enter Keyword" value=""
-                                    name="s">
+                                <input type="search" class="search-field" placeholder="Enter Keyword"
+                                    value="" name="s">
                             </label>
                             <input type="submit" class="search-submit" value="Search">
                         </form>
@@ -208,71 +216,36 @@
                                             <!-- col -->
                                             <div class="col-sm-6 col-lg-7">
 
-
                                                 <div class="event">
                                                     <h2>WORK HISTORY</h2>
-                                                    <p>
-                                                        <i class="pw-icon-badge"></i>
-                                                        <!--<img src="images/site/icon-03.png" alt="image"/>-->
-                                                    </p>
+                                                    <p><i class="pw-icon-badge"></i></p>
                                                 </div>
 
-                                                <div class="event">
-                                                    <h3>July 2024 - Current</h3>
-                                                    <h4>Fullstack Developer & System Analyst</h4>
-                                                    <h5>Javatekno MitraSolusi - Ponorogo</h5>
-                                                    <p> Responsible for analyzing system requirements and developing
-                                                        web-based
-                                                        applications. Involved in frontend and backend development, API
-                                                        integration,
-                                                        database design, and system optimization to support business and
-                                                        operational
-                                                        processes..</p>
-                                                </div>
+                                                @foreach ($workHistories as $work)
+                                                    <div class="event">
+                                                        <h3>{{ $work['period'] }}</h3>
+                                                        <h4>{{ $work['position'] }}</h4>
+                                                        <h5>{{ $work['company'] }}</h5>
+                                                        <p>{{ $work['description'] }}</p>
+                                                    </div>
+                                                @endforeach
 
-                                                <div class="event">
-                                                    <h3>Aug 2024 - Dec 2024</h3>
-                                                    <h4>Backend Developer Intern</h4>
-                                                    <h5>Technopartner Indonesia. - Yogyakarta</h5>
-                                                    <p> Developed Content Management Systems (CMS) for two projects
-                                                        using the
-                                                        Laravel framework. Collaborated closely with the team through
-                                                        the Agile
-                                                        Scrum methodology to ensure structured development and alignment
-                                                        with
-                                                        project requirements.</p>
-                                                </div>
-                                                <div class="event">
-                                                    <h3>Sep 2023 – Dec 2023</h3>
-                                                    <h4>Surveyor & Backend Engineer</h4>
-                                                    <h5>ADS Digital Partner – Malang</h5>
-                                                    <p>
-                                                        Assisted the backend team in developing features using the
-                                                        Laravel
-                                                        framework and performed API testing using Postman.
-                                                    </p>
-                                                </div>
 
 
                                                 <div class="event">
                                                     <h2>EDUCATION</h2>
-                                                    <p>
-                                                        <i class="pw-icon-education"></i>
-                                                        <!--<img src="images/site/icon-03.png" alt="image"/>-->
-                                                    </p>
+                                                    <p><i class="pw-icon-education"></i></p>
                                                 </div>
 
-                                                <div class="event">
-                                                    <h3>2021-2025</h3>
-                                                    <h4>Bussines Information System</h4>
-                                                    <h5>Politeknik Negeri Malang</h5>
-                                                    <p> Focused on business process analysis, information systems
-                                                        development,
-                                                        database management, and data-driven decision making.
-                                                        Experienced in
-                                                        building web-based systems to support operational and managerial
-                                                        needs.</p>
-                                                </div>
+                                                @foreach ($educations as $edu)
+                                                    <div class="event">
+                                                        <h3>{{ $edu['period'] }}</h3>
+                                                        <h4>{{ $edu['major'] }}</h4>
+                                                        <h5>{{ $edu['institution'] }}</h5>
+                                                        <p>{{ $edu['description'] }}</p>
+                                                    </div>
+                                                @endforeach
+
 
                                                 {{--
                                                 <div class="event">
@@ -309,175 +282,41 @@
                                             <div class="col-sm-6 col-lg-5">
 
 
-                                                <!-- section-title -->
                                                 <div class="section-title center">
-                                                    <h2>
-                                                        <i>Design Skills</i>
-                                                    </h2>
+                                                    <h2><i>Design Skills</i></h2>
                                                 </div>
-                                                <!-- section-title -->
 
-
-                                                <!-- .skill-unit -->
-                                                <div class="skill-unit">
-                                                    <h4>Sketch</h4>
-                                                    <div class="bar" data-percent="80">
-                                                        <div class="progress"></div>
+                                                @foreach ($designSkills as $skill)
+                                                    <div class="skill-unit">
+                                                        <h4>{{ $skill['name'] }}</h4>
+                                                        <div class="bar" data-percent="{{ $skill['percent'] }}">
+                                                            <div class="progress"></div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <!-- .skill-unit -->
-
-                                                <!-- .skill-unit -->
-                                                <div class="skill-unit">
-                                                    <h4>Adobe XD</h4>
-                                                    <div class="bar" data-percent="100">
-                                                        <div class="progress"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- .skill-unit -->
-
-                                                <!-- .skill-unit -->
-                                                <div class="skill-unit">
-                                                    <h4>inVision</h4>
-                                                    <div class="bar" data-percent="80">
-                                                        <div class="progress"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- .skill-unit -->
-
-                                                <!-- .skill-unit -->
-                                                <div class="skill-unit">
-                                                    <h4>Illustrator</h4>
-                                                    <div class="bar" data-percent="70">
-                                                        <div class="progress"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- .skill-unit -->
+                                                @endforeach
 
 
 
 
 
-                                                <!-- section-title -->
                                                 <div class="section-title center">
-                                                    <h2>
-                                                        <i>Coding Skills</i>
-                                                    </h2>
+                                                    <h2><i>Coding Skills</i></h2>
                                                 </div>
-                                                <!-- section-title -->
 
-                                                <!-- .skill-unit -->
-                                                <div class="skill-unit">
-                                                    <h4>Typescript</h4>
-                                                    <div class="bar" data-percent="90">
-                                                        <div class="progress"></div>
+                                                @foreach ($codingSkills as $skill)
+                                                    <div class="skill-unit">
+                                                        <h4>{{ $skill['name'] }}</h4>
+                                                        <div class="bar" data-percent="{{ $skill['percent'] }}">
+                                                            <div class="progress"></div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <!-- .skill-unit -->
-
-                                                <!-- .skill-unit -->
-                                                <div class="skill-unit">
-                                                    <h4>React Native</h4>
-                                                    <div class="bar" data-percent="80">
-                                                        <div class="progress"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- .skill-unit -->
-
-                                                <!-- .skill-unit -->
-                                                <div class="skill-unit">
-                                                    <h4>Svg Animation</h4>
-                                                    <div class="bar" data-percent="70">
-                                                        <div class="progress"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- .skill-unit -->
-
-                                                <!-- .skill-unit -->
-                                                <div class="skill-unit">
-                                                    <h4>Graph QL</h4>
-                                                    <div class="bar" data-percent="80">
-                                                        <div class="progress"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- .skill-unit -->
-
-
-
-                                                <!-- section-title -->
-                                                {{-- <div class="section-title center">
-                                                    <h2>
-                                                        <i>TESTIMONIALS</i>
-                                                    </h2>
-                                                </div> --}}
-                                                <!-- section-title -->
-
-
-                                                <!-- Testimonial -->
-                                                {{-- <div class="testo">
-                                                    <img src="images/site/testo-01.jpg" alt="someone">
-                                                    <h3>Chris Jones</h3>
-                                                    <h5>CEO / Dream Inc.</h5>
-                                                    <p>He is a great and hardworking guy. I am so proud of i have him
-                                                        as my asistant. He helped me so much. Also i am so proud of i
-                                                        have him as my asistant. He helped me so much.</p>
-
-                                                </div> --}}
-                                                <!-- Testimonial -->
-
-                                                <!-- Testimonial -->
-                                                {{-- <div class="testo">
-                                                    <img src="images/site/testo-02.jpg" alt="someone">
-                                                    <h3>Melody Coen</h3>
-                                                    <h5>Chemist / Freelancer</h5>
-                                                    <p>He was a great co-worker and a friend. I would't be where i am
-                                                        without his support.</p>
-
-                                                </div> --}}
-                                                <!-- Testimonial -->
-
-                                                <!-- Testimonial -->
-                                                {{-- <div class="testo">
-                                                    <img src="images/site/testo-03.jpg" alt="someone">
-
-                                                    <h3>Jason Wilson</h3>
-                                                    <h5>Lab Geek / Houston Tower</h5>
-                                                    <p>He is ok. I don't really know him. He looks nice.</p>
-
-                                                </div> --}}
-                                                <!-- Testimonial -->
-
-
-                                                <!-- Testimonial -->
-                                                {{-- <div class="testo">
-                                                    <img src="images/site/testo-04.jpg" alt="someone">
-                                                    <h3>Chris Jones</h3>
-                                                    <h5>CEO / Dream Inc.</h5>
-                                                    <p>He is a great and hardworking guy. I am so proud of i have him
-                                                        as my asistant. He helped me so much. Also i am so proud of i
-                                                        have him as my asistant. He helped me so much.</p>
-
-                                                </div> --}}
-                                                <!-- Testimonial -->
-
-
+                                                @endforeach
                                             </div>
                                             <!-- col -->
-
-
                                         </div>
                                         <!-- row -->
-
-
-
-
-
-
                                     </div>
                                     <!-- .entry-content -->
-
-
-
                                 </article>
                                 <!-- .hentry -->
 
