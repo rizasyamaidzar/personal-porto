@@ -5,12 +5,12 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ikonik - Responsive HTML5 vCard Template">
+    <meta name="description" content="Riza Afif Syamaidzar - Responsive HTML5 vCard Template">
     <meta name="keywords" content="vcard, html5, portfolio">
     <meta name="author" content="Pixelwars">
     <meta name="theme-color" content="#1755cf" />
 
-    <title>ikonik</title>
+    <title>Riza Afif Syamaidzar</title>
 
     <!-- FAV and TOUCH ICONS -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
